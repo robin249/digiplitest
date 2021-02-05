@@ -95,7 +95,7 @@
     $headers4 = array(
       "Authorization: Bearer $accessToken",
      );
-    $getItem = httpGet("https://aml.digipli.com:8080/api/Responses/GetResponses?WorkflowKey=CustomerDueDiligence&ItemKey=$uniqItemId", $headers4);    
+    $getItem = httpGet("https://test-aml.digipli.com:8080/api/Responses/GetResponses?WorkflowKey=CustomerDueDiligence&ItemKey=$uniqItemId", $headers4);    
 
     // print_r($getItem);
     $res = json_decode($getItem);
